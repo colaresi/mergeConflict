@@ -8,7 +8,7 @@ functions to work with vectors
  - scale
  - dot
 
-if run as __main__
+if run as a script:
 input
   None
 output
