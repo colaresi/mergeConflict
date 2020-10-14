@@ -140,10 +140,10 @@ git reset --hard PUT_HASH_WHERE_YOU_WANT_TO_RESET_TO_HERE
 
 ```
 
-In this case because the conference commit is tagged as v1.0, we can just:
+In this case because the conference commit is tagged as v2.0, we can just:
 
 ```zsh
-git reset --hard v1.0 
+git reset --hard v2.0 
 
 ```
 
