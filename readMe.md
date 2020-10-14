@@ -47,21 +47,21 @@ The flagging of merge conflicts is a great thing and they are usually not so har
 
 ## A sample merge conflict with git
 
-In this repo, we have two branches, master and newMessages.
+In this repo, we have two branches, main and newMessages.
 
-On the newMessages branch, there is a new file newMessages.py as well as changes to the docstring in vector.py, in comparison to the master branch.
+On the newMessages branch, there is a new file newMessages.py as well as changes to the docstring in vector.py, in comparison to the main branch.
 
-Before the new Messages branch was merged back into the master branch, the researcher switched back to the master branch and made some other changes to vector.py.
+Before the new Messages branch was merged back into the main branch, the researcher switched back to the main branch and made some other changes to vector.py.
 
-In their defense there was a conference coming up, and they wanted to present their best  and most stable work, which was on the master branch. 
+In their defense there was a conference coming up, and they wanted to present their best  and most stable work, which was on the main branch. 
 
-This conference commit, on master, is tagged as commit v1.0.
+This conference commit, on main, is tagged as commit v1.0.
 
 ## The coming conflict
 
-After the conference, it is clear from the comments that the team needs to add more messages and so they want to merge in the newMessage branch to master/main.
+After the conference, it is clear from the comments that the team needs to add more messages and so they want to merge in the newMessage branch to main.
 
-This is where you come in. After cloning this repository, check that you are on the master branch, and try and merge in the changes from the newMessages branch with the comment:
+This is where you come in. After cloning this repository, check that you are on the main branch, and try and merge in the changes from the newMessages branch with the comment:
 
 ```zsh
 git merge newMessage
@@ -85,11 +85,11 @@ You should see this:
 
 ![](images/mergeConflictPic2.png)
 
-This is great. Git has changed the version of vector.py in the working directory on master, to identify the lines that have a conflict. 
+This is great. Git has changed the version of vector.py in the working directory on main, to identify the lines that have a conflict. 
 
 Git diff by default shows 3 lines of context above and below a change. Positive signs are addition. 
 
-The "<<<<<<<<< HEAD" tells us what text in in the current HEAD that we are looking at, what is on master here. 
+The "<<<<<<<<< HEAD" tells us what text in in the current HEAD that we are looking at, what is on main here. 
 
 "=========" is like the dividing line. Above this is the HEAD version of the line, below this is the alternative version. 
 
