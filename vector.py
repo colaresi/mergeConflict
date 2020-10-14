@@ -10,7 +10,7 @@ functions to work with vectors
 
 if run as __main__
 input
-  d -- the dimensionality of the space for the test
+  None
 output
   None if tests passed, exception if tests not passed
 """
